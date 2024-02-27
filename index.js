@@ -5,7 +5,7 @@ let isMobileNavActive = false;
 
 const toggleMobileNav = () => {
     console.log("ASdfsdf");
-    nav.style.height = isMobileNavActive ? "0" : "min(80%,24rem)";
+    nav.style.height = isMobileNavActive ? "0" : "min(90vh,23rem)";
     nav.style.padding = isMobileNavActive ? "0 2rem" : "2rem";
     isMobileNavActive = !isMobileNavActive;
 };

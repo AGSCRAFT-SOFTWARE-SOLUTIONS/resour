@@ -35,8 +35,8 @@ footer > div {
     gap: 6rem;
 }
 
-main > *:nth-child(2) {
-    margin-top: 6rem;
+main > *:nth-child(1) {
+    margin-top: 8rem;
 }
 
 main > *:last-child {
@@ -270,10 +270,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
     position: fixed;
-    width: min(85vw, 69rem);
     z-index: 100;
+    background: var(--bg);
+    width: min(90%, 80rem);
+    padding: 1rem clamp(1rem, 2vw, 4rem);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header h3 {
@@ -288,8 +291,8 @@ nav {
     background: var(--bg);
     box-shadow: 0 5px 10px var(--mid-d);
     border-radius: 2rem;
-    top: 4rem;
-    right: 10vw;
+    top: 5rem;
+    right: 0;
     overflow-y: scroll;
     height: 0;
     padding: 0 2rem;
